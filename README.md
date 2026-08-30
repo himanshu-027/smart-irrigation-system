@@ -2,21 +2,19 @@
 
 **An Arduino-based smart irrigation system that automatically monitors soil moisture and controls a water pump according to the moisture level.**
 
+
+
 ## Project Overview
 
 **The Smart Irrigation System is designed to automate the watering process of plants.**
 
-
-
 **A soil moisture sensor is used to measure the moisture level of the soil.**
-
-
 
 **Arduino UNO reads the sensor value and controls the water pump through a relay module.**
 
-
-
 **A 16x2 I2C LCD displays the current moisture value and pump status.**
+
+
 
 ## Features
 
