@@ -1,22 +1,11 @@
 **# Smart Irrigation System**
 
-
-
 An Arduino-based smart irrigation system that automatically monitors
-
 soil moisture and controls a water pump according to the moisture level.
-
-
 
 \## Project Preview
 
-
-
 !\[Smart Irrigation System](images/project-front.jpg)
-
-
-
-\---
 
 
 
@@ -40,41 +29,23 @@ soil moisture and controls a water pump according to the moisture level.
 
 
 
-\---
-
-
-
 **## How It Works**
-
-
 
 The soil moisture sensor measures the moisture level of the soil.
 
-
-
 The Arduino reads the sensor value through analog pin A0.
-
-
 
 If the moisture value is greater than the defined threshold,
 
 the Arduino activates the relay and turns ON the water pump.
 
-
-
 If the soil moisture is below the threshold,
 
 the pump remains OFF.
 
-
-
 The current moisture level and pump status are displayed
 
 on the I2C LCD.
-
-
-
-
 
 
 
@@ -83,8 +54,6 @@ on the I2C LCD.
 
 
 | Component | Quantity |
-
-
 
 | Arduino UNO | 1 |
 
@@ -102,17 +71,9 @@ on the I2C LCD.
 
 
 
-
-
-
-
 **## Pin Connections**
 
-
-
 | Component | Pin | Arduino |
-
-
 
 | Soil Moisture Sensor | AO | A0 |
 
@@ -128,23 +89,13 @@ on the I2C LCD.
 
 
 
-
-
-
-
 **## Circuit Diagram**
-
-
 
 !\[Circuit Diagram](circuit/circuit-diagram.png)
 
 
 
-
-
 **## Software**
-
-
 
 \- Arduino IDE
 
@@ -156,13 +107,7 @@ on the I2C LCD.
 
 
 
-
-
-
-
 **## Working Logic**
-
-
 
 &#x20;      Start
 
