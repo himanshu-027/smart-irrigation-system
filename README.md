@@ -1,243 +1,206 @@
-**# Smart Irrigation System**
+### **# Smart Irrigation System**
 
+### 
 
+**An Arduino-based smart irrigation system that automatically monitors**
 
-An Arduino-based smart irrigation system that automatically monitors
-soil moisture and controls a water pump according to the moisture level.
+**soil moisture and controls a water pump according to the moisture level.**
 
 
 
+#### **## Project Preview**
 
 
-\## Project Preview
 
+**!\[Smart Irrigation System](images/project-front.jpg)**
 
 
-!\[Smart Irrigation System](images/project-front.jpg)
 
+**---**
 
 
-**## Features**
 
+#### **## Features**
 
 
-\- Real-time soil moisture monitoring
 
+**- Real-time soil moisture monitoring**
 
+**- Automatic water pump control**
 
-\- Automatic water pump control
+**- 16×2 I2C LCD display**
 
+**- Relay-based pump switching**
 
+**- Serial Monitor output**
 
-\- 16×2 I2C LCD display
+**- Low-cost and simple hardware**
 
+**- Automatic irrigation based on soil condition**
 
 
-\- Relay-based pump switching
 
+**---**
 
 
-\- Serial Monitor output
 
+#### **## How It Works**
 
+#### 
 
-\- Low-cost and simple hardware
+**The soil moisture sensor measures the moisture level of the soil.**
 
 
 
-\- Automatic irrigation based on soil condition
+**The Arduino reads the sensor value through analog pin A0.**
 
 
 
-**## How It Works**
+**If the moisture value is greater than the defined threshold,**
 
-The soil moisture sensor measures the moisture level of the soil.
+**the Arduino activates the relay and turns ON the water pump.**
 
 
 
-The Arduino reads the sensor value through analog pin A0.
+**If the soil moisture is below the threshold,**
 
+**the pump remains OFF.**
 
 
-If the moisture value is greater than the defined threshold,
 
+**The current moisture level and pump status are displayed**
 
+**on the I2C LCD.**
 
-the Arduino activates the relay and turns ON the water pump.
 
 
+**---**
 
-If the soil moisture is below the threshold,
 
 
+#### **## Hardware Required**
 
-the pump remains OFF.
+#### 
 
+**| Component | Quantity |**
 
+**|---|---:|**
 
-The current moisture level and pump status are displayed
+**| Arduino UNO | 1 |**
 
+**| Soil Moisture Sensor | 1 |**
 
+**| 16×2 I2C LCD | 1 |**
 
-on the I2C LCD.
+**| Relay Module | 1 |**
 
+**| DC Water Pump | 1 |**
 
+**| External Power Supply | 1 |**
 
-**## Hardware Required**
+**| Jumper Wires | As required |**
 
 
 
-| Component | Quantity |
+**---**
 
 
 
-| Arduino UNO | 1 |
+#### **## Pin Connections**
 
 
 
-| Soil Moisture Sensor | 1 |
+**| Component | Pin | Arduino |**
 
+**|---|---|---|**
 
+**| Soil Moisture Sensor | AO | A0 |**
 
-| 16×2 I2C LCD | 1 |
+**| Relay Module | IN | D8 |**
 
+**| LCD | SDA | A4 |**
 
+**| LCD | SCL | A5 |**
 
-| Relay Module | 1 |
+**| LCD | VCC | 5V |**
 
+**| LCD | GND | GND |**
 
 
-| DC Water Pump | 1 |
 
+**---**
 
 
-| External Power Supply | 1 |
 
+#### **## Circuit Diagram**
 
 
-| Jumper Wires | As required |
 
+**!\[Circuit Diagram](circuit/circuit-diagram.png)**
 
 
 
+**---**
 
-**## Pin Connections**
 
 
+#### **## Software**
 
-| Component | Pin | Arduino |
 
 
+**- Arduino IDE**
 
-| Soil Moisture Sensor | AO | A0 |
+**- C/C++ (Arduino)**
 
+**- LiquidCrystal\_I2C Library**
 
+**- Wire Library**
 
-| Relay Module | IN | D8 |
 
 
+**---**
 
-| LCD | SDA | A4 |
 
 
+#### **## Working Logic**
 
-| LCD | SCL | A5 |
 
 
+**```text**
 
-| LCD | VCC | 5V |
+**Start**
 
+&#x20; **↓**
 
+**Read Soil Moisture**
 
-| LCD | GND | GND |
+&#x20; **↓**
 
+**Display Moisture Value**
 
+&#x20; **↓**
 
+**Is Moisture > 700?**
 
+&#x20; **↓**
 
-**## Circuit Diagram**
+&#x20;**┌───────────────┐**
 
+&#x20;**│               │**
 
+&#x20;**YES             NO**
 
-!\[Circuit Diagram](circuit/circuit-diagram.png)
+&#x20;**│               │**
 
+&#x20;**▼               ▼**
 
+**Pump ON        Pump OFF**
 
-**## Software**
+&#x20;**│               │**
 
+&#x20;**└───────┬───────┘**
 
+&#x20;        **↓**
 
-\- Arduino IDE
-
-
-
-\- C/C++ (Arduino)
-
-
-
-\- LiquidCrystal\_I2C Library
-
-
-
-\- Wire Library
-
-
-
-
-
-**## Working Logic**
-
-
-
-
-
-&#x20;      Start
-
-
-
-&#x20;        ↓
-
-
-
-&#x20;Read Soil Moisture
-
-
-
-&#x20;        ↓
-
-
-
-Display Moisture Value
-
-
-
-&#x20;        ↓
-
-
-
-&#x20; Is Moisture > 700?
-
-
-
-&#x20;        ↓
-
-&#x20;┌───────────────┐
-
-&#x20;│               │
-
-&#x20;YES             NO
-
-&#x20;│               │
-
-&#x20;▼               ▼
-
-Pump ON        Pump OFF
-
-&#x20;│               │
-
-&#x20;└───────┬───────┘
-
-&#x20;          ↓
-
-&#x20;        Repeat
+&#x20;     **Repeat**
 
