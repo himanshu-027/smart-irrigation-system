@@ -1,180 +1,180 @@
-\# Smart Irrigation System
+# \# Smart Irrigation System
 
-An Arduino-based smart irrigation system that automatically
+**An Arduino-based smart irrigation system that automatically**
 
-monitors soil moisture and controls a water pump according
+**monitors soil moisture and controls a water pump according**
 
-to the moisture level.
+**to the moisture level.**
 
 
 
-\## Project Overview
+### \## Project Overview
 
-The Smart Irrigation System is designed to automate the
+* **The Smart Irrigation System is designed to automate the**
 
-process of plants.
+&#x20;   **process of plants.**
 
-A soil moisture sensor is used to measure the moisture
+* **A soil moisture sensor is used to measure the moisture**
 
-level of the soil.
+&#x20;  **level of the soil.**
 
-Arduino UNO reads the sensor value and controls the
+* **Arduino UNO reads the sensor value and controls the**
 
-water pump through a relay module.
+&#x20;   **water pump through a relay module.**
 
-A 16x2 I2C LCD displays the current moisture value
+* **A 16x2 I2C LCD displays the current moisture value**
 
-and pump status.
+&#x20;  **and pump status.**
 
 
 
-\## Features
+### \## Features
 
-\- Soil moisture monitoring
+&#x09;**-** **Soil moisture monitoring**
 
-\- Automatic pump control
+&#x09;**- Automatic pump control**
 
-\- 16x2 I2C LCD display
+&#x09;**- 16x2 I2C LCD display**
 
-\- Relay-based switching
+&#x09;**- Relay-based switching**
 
-\- Serial Monitor output
+&#x09;**- Serial Monitor output**
 
-\- Automatic irrigation
+&#x09;**- Automatic irrigation**
 
-\- Simple hardware design
+&#x09;**- Simple hardware design**
 
-\- Low-cost implementation
+&#x09;**- Low-cost implementation**
 
-\- Continuous monitoring
+&#x09;**- Continuous monitoring**
 
 
 
-\## Components Required
+### \## Components Required
 
-| Component | Quantity |
+&#x09;**| Component | Quantity |**
 
-|---|---:|
+&#x09;**|---|---:|**
 
-| Arduino UNO | 1 |
+&#x09;**| Arduino UNO | 1 |**
 
-| Soil Moisture Sensor | 1 |
+&#x09;**| Soil Moisture Sensor | 1 |**
 
-| 16x2 I2C LCD | 1 |
+&#x09;**| 16x2 I2C LCD | 1 |**
 
-| Relay Module | 1 |
+&#x09;**| Relay Module | 1 |**
 
-| DC Water Pump | 1 |
+&#x09;**| DC Water Pump | 1 |**
 
-| External Power Supply | 1 |
+&#x09;**| External Power Supply | 1 |**
 
-| Jumper Wires | As required |
+&#x09;**| Jumper Wires | As required |**
 
 
 
-\## Pin Connections
+### \## Pin Connections
 
-| Component | Pin | Arduino UNO |
+&#x09;**| Component | Pin | Arduino UNO |**
 
-|---|---|---|
+&#x09;**|---|---|---|**
 
-| Soil Moisture Sensor | AO | A0 |
+&#x09;**| Soil Moisture Sensor | AO | A0 |**
 
-| Soil Moisture Sensor | VCC | 5V |
+&#x09;**| Soil Moisture Sensor | VCC | 5V |**
 
-| Soil Moisture Sensor | GND | GND |
+&#x09;**| Soil Moisture Sensor | GND | GND |**
 
-| Relay Module | IN | D8 |
+&#x09;**| Relay Module | IN | D8 |**
 
-| Relay Module | VCC | 5V |
+&#x09;**| Relay Module | VCC | 5V |**
 
-| Relay Module | GND | GND |
+&#x09;**| Relay Module | GND | GND |**
 
-| LCD | SDA | A4 |
+&#x09;**| LCD | SDA | A4 |**
 
-| LCD | SCL | A5 |
+&#x09;**| LCD | SCL | A5 |**
 
-| LCD | VCC | 5V |
+&#x09;**| LCD | VCC | 5V |**
 
-| LCD | GND | GND |
+&#x09;**| LCD | GND | GND |**
 
 
 
-\## Software Required
+### \## Software Required
 
-\- Arduino IDE
+&#x09;**- Arduino IDE**
 
-\- Arduino C/C++
+&#x09;**- Arduino C/C++**
 
-\- Wire Library
+&#x09;**- Wire Library**
 
-\- LiquidCrystal\_I2C Library
+&#x09;**- LiquidCrystal\_I2C Library**
 
 
 
-\##System Flow
+### \##System Flow
 
-&#x20;    START
+&#x20;     	       	      **START**
 
-&#x20;      |
+&#x20;     		 	**|**
 
-&#x20;      v
+&#x20;     		 	**v**
 
-Initialize Serial
+&#x09;	**Initialize Serial**
 
-&#x20;      |
+&#x20;      			**|**
 
-&#x20;      v
+&#x20;      			**v**
 
-Configure Relay
+&#x09;	**Configure Relay**
 
-&#x20;      |
+&#x09;        	**|**
 
-&#x20;      v
+&#x20;     	 		**v**
 
-Initialize LCD
+&#x09;	**Initialize LCD**
 
-&#x20;      |
+&#x20;      			**|**
 
-&#x20;      v
+&#x20;      			**v**
 
-Read Soil Moisture
+&#x09;	**Read Soil Moisture**
 
-&#x20;      |
+&#x20;      			**|**
 
-&#x20;      v
+&#x20;      			**v**
 
-Display Moisture
+&#x09;	**Display Moisture**
 
-&#x20;      |
+&#x20;               	**|**
 
-&#x20;      v
+&#x20;               	**v**
 
-Moisture > 700?
+&#x09;	**Moisture > 700?**
 
-&#x20;      |
+&#x20;      			**|**
 
-&#x20; +---------- YES ----------+
+&#x20; 	   **+---------- YES ----------+**
 
-&#x20; |                         |
+&#x20; 	   **|                         |**
 
-&#x20; v                         v
+&#x20;	   **v                         v**
 
-Pump ON                  Pump OFF
+&#x20;        **Pump ON                  Pump OFF**
 
-&#x20; |                         |
+&#x20; 	   **|                         |**
 
-&#x20; +------------+------------+
+&#x20;   	   **+------------+------------+**
 
-&#x20;              |
+&#x20;                       **|**
 
-&#x20;              v
+&#x20;              		**v**
 
-&#x20;         Wait 1 Second
+&#x20;         	  **Wait 1 Second**
 
-&#x20;              |
+&#x20;              		**|**
 
-&#x20;              v
+&#x20;              		**v**
 
-&#x20;            REPEAT
+&#x20;            	      **REPEAT**
 
