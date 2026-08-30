@@ -52,9 +52,9 @@
 
 ### \## Components Required
 
-|                         **Component**|                            **Quantity**|
+|**Component**|**Quantity**|
 |-|-|
-| **Arduino UNO**|1|
+|**Arduino UNO**|1|
 |**Soil Moisture Sensor**|1|
 |**16x2 I2C LCD**|1|
 |**Relay Module**|1|
@@ -66,7 +66,7 @@
 
 ### \## Pin Connections
 
-|              **Component**|                 **Pin**|               **Arduino UNO**|
+|**Component**|**Pin**|**Arduino UNO**|
 |-|-|-|
 |**Soil Moisture Sensor**|**A0**|**A0**|
 |**Soil Moisture Sensor**|**VCC**|**3.3V**|
@@ -95,10 +95,10 @@
 
 ### \##System Flow
 
-|                      **start<br />**      		 	**v<br />**		**Initialize Serial<br />**       			**\|<br />**       			**v<br />**		**Configure Relay<br />**	        	**\|<br />**      	 		**v<br />**		**Initialize LCD<br />**       			**\|<br />**       			**v<br />**		**Read Soil Moisture<br />**       			**\|<br />**       			**v<br />**		**Display Moisture<br />**                	**\|<br />**                	**v<br />**		**Moisture > 700?<br />**       			**\|<br />**  	   **+---------- YES ----------+<br />**  	   **\|                         \|<br />** 	   **v                         v<br />**         **Pump ON                  Pump OFF<br />**  	   **\|                         \|<br />**    	   **+------------+------------+<br />**                        **\|<br />**               		**v<br />**          	  **Wait 1 Second<br />**               		**\|<br />**               		**v<br />**             	      **REPEAT**|
+|**start<br />**      		 	**v<br />**		**Initialize Serial<br />**       			**\|<br />**       			**v<br />**		**Configure Relay<br />**	        	**\|<br />**      	 		**v<br />**		**Initialize LCD<br />**       			**\|<br />**       			**v<br />**		**Read Soil Moisture<br />**       			**\|<br />**       			**v<br />**		**Display Moisture<br />**                	**\|<br />**                	**v<br />**		**Moisture > 700?<br />**       			**\|<br />**  	   **+---------- YES ----------+<br />**  	   **\|                         \|<br />** 	   **v                         v<br />**         **Pump ON                  Pump OFF<br />**  	   **\|                         \|<br />**    	   **+------------+------------+<br />**                        **\|<br />**               		**v<br />**          	  **Wait 1 Second<br />**               		**\|<br />**               		**v<br />**             	      **REPEAT**|
 |-|
 
 
 
-&#x20;     		 	
+&#x20;
 
