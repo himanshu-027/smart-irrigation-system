@@ -189,11 +189,15 @@ on the I2C LCD.
 
 
 
+
+
 &#x20;      Start
 
 
 
 &#x20;        ↓
+
+
 
 &#x20;Read Soil Moisture
 
@@ -201,13 +205,19 @@ on the I2C LCD.
 
 &#x20;        ↓
 
+
+
 Display Moisture Value
 
 
 
 &#x20;        ↓
 
+
+
 &#x20; Is Moisture > 700?
+
+
 
 &#x20;        ↓
 
