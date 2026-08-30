@@ -2,13 +2,9 @@
 
 An Arduino-based smart irrigation system that automatically monitors soil moisture and controls a water pump according to the moisture level.
 
----
-
 ## Project Preview
 
 ![Smart Irrigation System](images/project-front.jpg)
-
----
 
 ## Features
 
@@ -19,8 +15,6 @@ An Arduino-based smart irrigation system that automatically monitors soil moistu
 - Serial Monitor output
 - Low-cost and simple hardware
 - Automatic irrigation based on soil condition
-
----
 
 ## How It Works
 
@@ -34,8 +28,6 @@ If the moisture value is **700 or below**, the pump remains **OFF**.
 
 The current moisture level and pump status are displayed on the **16×2 I2C LCD**.
 
----
-
 ## Hardware Required
 
 | Component | Quantity |
@@ -48,8 +40,6 @@ The current moisture level and pump status are displayed on the **16×2 I2C LCD*
 | External Power Supply | 1 |
 | Jumper Wires | As required |
 
----
-
 ## Pin Connections
 
 | Component | Pin | Arduino UNO |
@@ -61,13 +51,9 @@ The current moisture level and pump status are displayed on the **16×2 I2C LCD*
 | LCD | VCC | 5V |
 | LCD | GND | GND |
 
----
-
 ## Circuit Diagram
 
 ![Circuit Diagram](circuit/circuit-diagram.png)
-
----
 
 ## Software
 
@@ -75,8 +61,6 @@ The current moisture level and pump status are displayed on the **16×2 I2C LCD*
 - Arduino C/C++
 - Wire Library
 - LiquidCrystal_I2C Library
-
----
 
 ## Working Logic
 
