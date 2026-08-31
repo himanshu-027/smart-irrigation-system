@@ -1,10 +1,14 @@
 # Smart Irrigation System
 
-**\*\*An Arduino-based smart irrigation system that automatically monitors soil moisture and controls a water pump according to the moisture level\*\***
+
+
+**An Arduino-based smart irrigation system that automatically monitors soil moisture and controls a water pump according to the moisture level.**
 
 
 
 ## Project Overview
+
+
 
 * **The Smart Irrigation System is designed to automate the watering process of plants.**
 * **A soil moisture sensor is used to measure the moisture level of the soil.**
@@ -14,6 +18,8 @@
 
 
 ## Features
+
+
 
 &#x09;**-** **Soil moisture monitoring**
 
@@ -70,6 +76,8 @@
 
 ## Software Required
 
+
+
 **- Arduino IDE**
 
 **- Arduino C/C++**
@@ -91,6 +99,8 @@
 
 ## Results
 
+
+
 **The developed system successfully demonstrates automatic irrigation based on soil moisture readings.**
 
 **The Arduino continuously monitors the soil moisture and controls the pump according to the programmed threshold.**
@@ -100,6 +110,8 @@
 
 
 ## **Advantages**
+
+
 
 1. **Automatic irrigation**
 2. **Saves water**
@@ -113,6 +125,8 @@
 
 
 ## **Future Scope**
+
+
 
 **The project can be further improved by adding advanced features such as:**
 
@@ -142,6 +156,8 @@
 
 ## **Applications**
 
+
+
 1. **The system can be used in:**
 2. **Home gardens**
 3. **Agricultural fields**
@@ -155,6 +171,8 @@
 
 ## **Conclusion**
 
+
+
 **The Smart Irrigation System successfully demonstrates an automatic method of controlling irrigation based on soil moisture.**
 
 **The Arduino reads the moisture sensor, processes the sensor value, and controls the water pump through a relay.**
@@ -167,17 +185,23 @@
 
 ## **Acknowledgement**
 
+
+
 **I would like to express my sincere gratitude to everyone who supported and guided me during the development of this project.**
 
 
 
 ## **Author**
 
+
+
 **Himanshu Prajapati**
 
 
 
 ## **License**
+
+
 
 **This project is created for educational and learning purposes.**
 
