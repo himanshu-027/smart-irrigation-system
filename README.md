@@ -1,5 +1,9 @@
 # Smart Irrigation System
 
+
+
+
+
 **An Arduino-based smart irrigation system that automatically monitors soil moisture and controls a water pump according to the moisture level.**
 
 
@@ -7,6 +11,10 @@
 
 
 ## Project Overview
+
+
+
+
 
 * **The Smart Irrigation System is designed to automate the watering process of plants.**
 * **A soil moisture sensor is used to measure the moisture level of the soil.**
@@ -16,6 +24,10 @@
 
 
 ## Features
+
+
+
+
 
 &#x09;**-** **Soil moisture monitoring**
 
@@ -39,6 +51,10 @@
 
 ## Components Required
 
+
+
+
+
 |**Component**|**Quantity**|
 |-|-|
 |**Arduino UNO**|1|
@@ -52,6 +68,10 @@
 
 
 ## Pin Connections
+
+
+
+
 
 |**Component**|**Pin**|**Arduino UNO**|
 |-|-|-|
@@ -68,6 +88,10 @@
 
 ## Software Required
 
+
+
+
+
 **- Arduino IDE**
 
 **- Arduino C/C++**
@@ -80,12 +104,20 @@
 
 ## System Flow
 
+
+
+
+
 |                      **start<br />**      		 	**v<br />**		**Initialize Serial<br />**       			**\|<br />**       			**v<br />**		**Configure Relay<br />**	        	**\|<br />**      	 		**v<br />**		**Initialize LCD<br />**       			**\|<br />**       			**v<br />**		**Read Soil Moisture<br />**       			**\|<br />**       			**v<br />**		**Display Moisture<br />**                	**\|<br />**                	**v<br />**		**Moisture > 700?<br />**       			**\|<br />**  	   **+---------- YES ----------+<br />**  	   **\|                         \|<br />** 	   **v                         v<br />**         **Pump ON                  Pump OFF<br />**  	   **\|                         \|<br />**    	   **+------------+------------+<br />**                        **\|<br />**               		**v<br />**          	  **Wait 1 Second<br />**               		**\|<br />**               		**v<br />**             	      **REPEAT**|
 |-|
 
 ## 
 
 ## Results
+
+
+
+
 
 **The developed system successfully demonstrates automatic irrigation based on soil moisture readings.**
 
@@ -96,6 +128,10 @@
 
 
 ## **Advantages**
+
+
+
+
 
 1. **Automatic irrigation**
 2. **Saves water**
@@ -109,6 +145,10 @@
 
 
 ## **Future Scope**
+
+
+
+
 
 **The project can be further improved by adding advanced features such as:**
 
@@ -138,6 +178,10 @@
 
 ## **Applications**
 
+
+
+
+
 1. **The system can be used in:**
 2. **Home gardens**
 3. **Agricultural fields**
@@ -151,6 +195,10 @@
 
 ## **Conclusion**
 
+
+
+
+
 **The Smart Irrigation System successfully demonstrates an automatic method of controlling irrigation based on soil moisture.**
 
 **The Arduino reads the moisture sensor, processes the sensor value, and controls the water pump through a relay.**
@@ -163,17 +211,29 @@
 
 ## **Acknowledgement**
 
+
+
+
+
 **I would like to express my sincere gratitude to everyone who supported and guided me during the development of this project.**
 
 
 
 ## **Author**
 
+
+
+
+
 **Himanshu Prajapati**
 
 
 
 ## **License**
+
+
+
+
 
 **This project is created for educational and learning purposes.**
 
