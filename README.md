@@ -1,6 +1,6 @@
 # Smart Irrigation System
 
-**An Arduino-based smart irrigation system that automatically monitors soil moisture and controls a water pump according to the moisture level**
+**\*\*An Arduino-based smart irrigation system that automatically monitors soil moisture and controls a water pump according to the moisture level\*\***
 
 
 
