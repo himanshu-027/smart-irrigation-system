@@ -1,18 +1,15 @@
 # Smart Irrigation System
 
-**An Arduino-based smart irrigation system that automatically monitors soil moisture and controls a water pump according to the moisture level.**
+**An Arduino-based smart irrigation system that automatically monitors soil moisture and controls a water pump according to the moisture level**
 
 
 
 ## Project Overview
 
-**The Smart Irrigation System is designed to automate the watering process of plants.**
-
-**A soil moisture sensor is used to measure the moisture level of the soil.**
-
-**Arduino UNO reads the sensor value and controls the water pump through a relay module.**
-
-**A 16x2 I2C LCD displays the current moisture value and pump status.**
+* **The Smart Irrigation System is designed to automate the watering process of plants.**
+* **A soil moisture sensor is used to measure the moisture level of the soil.**
+* **Arduino UNO reads the sensor value and controls the water pump through a relay module.**
+* **A 16x2 I2C LCD displays the current moisture value and pump status.**
 
 
 
@@ -40,6 +37,8 @@
 
 ## Components Required
 
+
+
 |**Component**|**Quantity**|
 |-|-|
 |**Arduino UNO**|1|
@@ -53,6 +52,8 @@
 
 
 ## Pin Connections
+
+
 
 |**Component**|**Pin**|**Arduino UNO**|
 |-|-|-|
@@ -81,7 +82,9 @@
 
 ## System Flow
 
-|**start<br />**      		 	**v<br />**		**Initialize Serial<br />**       			**\|<br />**       			**v<br />**		**Configure Relay<br />**	        	**\|<br />**      	 		**v<br />**		**Initialize LCD<br />**       			**\|<br />**       			**v<br />**		**Read Soil Moisture<br />**       			**\|<br />**       			**v<br />**		**Display Moisture<br />**                	**\|<br />**                	**v<br />**		**Moisture > 700?<br />**       			**\|<br />**  	   **+---------- YES ----------+<br />**  	   **\|                         \|<br />** 	   **v                         v<br />**         **Pump ON                  Pump OFF<br />**  	   **\|                         \|<br />**    	   **+------------+------------+<br />**                        **\|<br />**               		**v<br />**          	  **Wait 1 Second<br />**               		**\|<br />**               		**v<br />**             	      **REPEAT**|
+
+
+|                      **start<br />**      		 	**v<br />**		**Initialize Serial<br />**       			**\|<br />**       			**v<br />**		**Configure Relay<br />**	        	**\|<br />**      	 		**v<br />**		**Initialize LCD<br />**       			**\|<br />**       			**v<br />**		**Read Soil Moisture<br />**       			**\|<br />**       			**v<br />**		**Display Moisture<br />**                	**\|<br />**                	**v<br />**		**Moisture > 700?<br />**       			**\|<br />**  	   **+---------- YES ----------+<br />**  	   **\|                         \|<br />** 	   **v                         v<br />**         **Pump ON                  Pump OFF<br />**  	   **\|                         \|<br />**    	   **+------------+------------+<br />**                        **\|<br />**               		**v<br />**          	  **Wait 1 Second<br />**               		**\|<br />**               		**v<br />**             	      **REPEAT**|
 |-|
 
 ## 
@@ -98,21 +101,14 @@
 
 ## **Advantages**
 
-**Automatic irrigation**
-
-**Saves water**
-
-**Reduces manual effort**
-
-**Simple circuit**
-
-**Low-cost components**
-
-**Easy to understand and modify**
-
-**Suitable for small-scale applications**
-
-**Real-time monitoring**
+1. **Automatic irrigation**
+2. **Saves water**
+3. **Reduces manual effort**
+4. **Simple circuit**
+5. **Low-cost components**
+6. **Easy to understand and modify**
+7. **Suitable for small-scale applications**
+8. **Real-time monitoring**
 
 
 
@@ -146,21 +142,14 @@
 
 ## **Applications**
 
-**The system can be used in:**
-
-**Home gardens**
-
-**Agricultural fields**
-
-**Greenhouses**
-
-**Plant nurseries**
-
-**Smart farming systems**
-
-**Automatic gardening systems**
-
-**Small-scale irrigation systems**
+1. **The system can be used in:**
+2. **Home gardens**
+3. **Agricultural fields**
+4. **Greenhouses**
+5. **Plant nurseries**
+6. **Smart farming systems**
+7. **Automatic gardening systems**
+8. **Small-scale irrigation systems**
 
 
 
