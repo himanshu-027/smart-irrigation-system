@@ -1,0 +1,187 @@
+# 🌱 Smart Irrigation System
+
+## 1. Introduction
+
+The Smart Irrigation System is an Arduino-based automatic irrigation
+project designed to monitor soil moisture and control a water pump
+according to the moisture level of the soil.
+
+The system reduces unnecessary water usage by supplying water only when
+the soil becomes dry.
+
+---
+
+## 2. Objectivez
+
+The main objectives of this project are:
+
+- To monitor soil moisture automatically.
+- To control a water pump using a relay module.
+- To display the moisture level on a 16×2 I2C LCD.
+- To reduce unnecessary water consumption.
+- To develop a simple and low-cost automatic irrigation system.
+
+---
+
+## 3. Components Required
+
+| Component | Quantity |
+|---|---:|
+| Arduino UNO | 1 |
+| Soil Moisture Sensor | 1 |
+| 16×2 I2C LCD | 1 |
+| Relay Module | 1 |
+| DC Water Pump | 1 |
+| External Power Supply | 1 |
+| Jumper Wires | As required |
+
+---
+
+## 4. Pin Connections
+
+| Component | Pin | Arduino UNO |
+|---|---|---|
+| Soil Moisture Sensor | AO | A0 |
+| Relay Module | IN | D8 |
+| I2C LCD | SDA | A4 |
+| I2C LCD | SCL | A5 |
+| I2C LCD | VCC | 5V |
+| I2C LCD | GND | GND |
+5. Working Principle
+
+---
+
+## The soil moisture sensor detects the moisture level of the soil and
+provides an analog value to the Arduino through pin A0.
+
+The Arduino compares the sensor reading with a predefined threshold.
+
+In the current program:
+
+```text
+Moisture > 700  →  Pump ON
+Moisture ≤ 700  →  Pump OFF
+
+6.System Flow
+		
+        START
+          ↓
+ Read Soil Moisture
+          ↓
+ Display Moisture Value
+          ↓
+   Moisture > 700?
+       ↙       ↘
+     YES        NO
+      ↓          ↓
+  Pump ON     Pump OFF
+      ↓          ↓
+      └────┬─────┘
+           ↓
+         Repeat
+	
+7. Hardware / Wiring
+
+The Arduino UNO acts as the main controller.
+
+The soil moisture sensor is connected to analog pin A0.
+The relay module is connected to digital pin D8.
+The 16×2 I2C LCD communicates with the Arduino through the I2C
+interface using SDA and SCL.
+
+The relay provides switching control for the DC water pump.
+
+⚠️ The pump should be powered using a suitable external power supply.
+Do not power a high-current pump directly from the Arduino 5V pin.		
+			
+8. Software Used
+Arduino IDE
+Arduino C/C++
+Wire Library
+LiquidCrystal_I2C Library
+			
+			
+9. Arduino Program
+
+The complete Arduino source code is available in:
+
+src/smart_irrigation.ino
+
+The program continuously reads the soil moisture sensor, displays the
+reading on the LCD, and controls the relay according to the threshold.
+				
+				
+10. Prototype
+Prototype 1
+
+Prototype 2
+
+Prototype 3
+				
+			
+11. Circuit Diagram
+
+
+
+
+12. Results
+
+The prototype successfully demonstrates automatic irrigation control.
+
+The system:
+
+Reads soil moisture values in real time.
+Displays the moisture value on the LCD.
+Turns the pump ON when the moisture reading is greater than 700.
+Turns the pump OFF when the moisture reading is 700 or below.
+Displays the pump status on the LCD.
+Provides sensor readings through the Serial Monitor.
+
+The threshold value can be modified in the Arduino program according to
+the type of soil and sensor calibration.
+
+13. Advantages
+Automatic irrigation control.
+Simple and low-cost implementation.
+Real-time monitoring.
+Easy to understand and modify.
+Helps reduce unnecessary water usage.
+Suitable for small-scale agricultural and gardening applications.
+14. Limitations
+The system uses a fixed moisture threshold.
+Sensor readings may vary depending on soil type.
+The basic prototype does not provide remote monitoring.
+The system does not automatically detect water tank level.
+Sensor calibration may be required for accurate operation.
+15. Future Scope
+
+The project can be further improved by adding:
+
+IoT-based remote monitoring.
+Mobile application integration.
+Real-time cloud data logging.
+Weather-based irrigation control.
+Water-level monitoring.
+Multiple soil moisture sensors.
+Solar-powered operation.
+Automatic moisture threshold calibration.
+AI/ML-based irrigation prediction.
+16. Conclusion
+
+The Smart Irrigation System successfully demonstrates how an Arduino,
+soil moisture sensor, LCD, relay, and water pump can be combined to create
+an automatic irrigation system.
+
+The prototype continuously monitors soil moisture and controls the pump
+according to the programmed threshold. This provides a simple approach
+to automatic irrigation and can be further developed into an IoT-enabled
+and intelligent agricultural system.
+
+17. Acknowledgement
+
+I would like to express my sincere gratitude to my teachers, mentors,
+friends, and everyone who supported and guided me during the development
+of this project.
+				
+				
+				
